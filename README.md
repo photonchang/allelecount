@@ -19,8 +19,11 @@ Output columns are tab-delimited:
 chr pos A C G T N a c g t n IN DEL indel
 
 The first two columns, chr and pos, are as indicated by the bam. 
+
 Note, only positions present in the bam are reported.
+
 The next 12 columns specify counts of each base (including N) on each strand, as well as a count of insertions (INS) that follow the specified base and deletions (DEL) that include the specified base.
+
 Final indel field (column 15) is only written for positions that indels were detected (i.e. leaves last column ragged). This field specifies counts of each insertion detected following the position and each deletion including the position.
 
 Revised on 2014-05-15. (rev 3)
